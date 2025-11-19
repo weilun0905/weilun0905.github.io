@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support Center</title>
+    <style>
+        :root {
+            --primary-color: #007AFF; /* iOS Blue */
+            --text-color: #333;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            background-color: #f0f8ff;
+            border: 1px solid #e1f0ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .email-link {
+            display: inline-block;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        
+        /* FAQ Styles */
+        .faq-section {
+            text-align: left;
+            margin-top: 30px;
+        }
+        .faq-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .faq-a {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>App Support</h1>
+        <p>Thank you for using our applications. We are dedicated to providing a smooth and high-quality user experience.</p>
+
+        <div class="contact-box">
+            <div>If you encounter any issues or have suggestions, please feel free to reach out to the development team:</div>
+            <a href="mailto:wayne90040@gmail.com" class="email-link">wayne90040@gmail.com</a>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-title">Frequently Asked Questions</div>
+            
+            <div class="faq-item">
+                <div class="faq-q">The app crashes or freezes. What should I do?</div>
+                <div class="faq-a">Please try updating the app to the latest version or restarting your device. If the problem persists, please contact us with your device model.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I restore my purchases?</div>
+                <div class="faq-a">You can usually find a "Restore Purchases" button in the app's Settings menu to retrieve your previous purchases.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How can I request a refund?</div>
+                <div class="faq-a">For iOS users, please request a refund directly through Apple's "Report a Problem" page. For Android users, please contact Google Play Support.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
